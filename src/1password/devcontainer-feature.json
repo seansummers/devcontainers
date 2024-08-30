@@ -4,8 +4,8 @@
     "version": "1.0.0",
     "description": "A 1password feature",
     "dependsOn": {
-        "ghcr.io/akhildevelops/devcontainer-features/apt": {
-            "PACKAGES": "curl,gpg"
+        "ghcr.io/rocker-org/devcontainer-features/apt-packages:1": {
+            "packages": "ca-certificates,curl,gpg"
         }
     }
 }
