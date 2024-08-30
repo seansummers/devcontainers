@@ -16,17 +16,15 @@ set -e
 # Optional: Import test library bundled with the devcontainer CLI
 source dev-container-features-test-lib
 
-echo -e "The result of the 'color' command will be:\n"
-color
-echo -e "The result of the 'hello' command will be:\n"
-hello
+echo -e "The location of the 'op' command is\n"
+which op
+echo -e "The version of the 'op' command is\n"
+op -v
 echo -e "\n"
 
 # Feature-specific tests
 # The 'check' command comes from the dev-container-features-test-lib.
-check "check purple is my favorite color" bash -c "color | grep 'my favorite color is purple'"
-check "check I am greeting with 'Greetings'" bash -c "hello | grep 'Greetings, $(whoami)'"
-
+check "op installed into /usr/bin" bash -c "which op | grep '/usr/bin/op'"
 
 # Report result
 # If any of the checks above exited with a non-zero exit code, the test will fail.
