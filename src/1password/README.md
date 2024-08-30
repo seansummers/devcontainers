@@ -1,7 +1,7 @@
 
-# 1Password for Dev Containers
+# 1password (1password)
 
-Feature to install 1Password.
+A 1password feature
 
 ## Example Usage
 
@@ -10,4 +10,11 @@ Feature to install 1Password.
     "ghcr.io/seansummers/devcontainers/1password:1": {}
 }
 ```
+
+
+
+
+
 ---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/seansummers/devcontainers/blob/main/src/1password/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
