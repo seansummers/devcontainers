@@ -1,5 +1,5 @@
 {
-    "hello": {
+    "1password": {
         "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
         "features": {
             "1password": {}
