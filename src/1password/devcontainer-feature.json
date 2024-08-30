@@ -1,9 +1,11 @@
 {
-    "name": "1password, using host 1password",
+    "name": "1password",
     "id": "1password",
     "version": "1.0.0",
     "description": "A 1password feature",
-    "installsAfter": [
-        "ghcr.io/devcontainers/features/common-utils"
-    ]
+    "dependsOn": {
+        "ghcr.io/akhildevelops/devcontainer-features/apt": {
+            "PACKAGES": "curl,gpg"
+        }
+    }
 }

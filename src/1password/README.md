@@ -1,7 +1,7 @@
 
 # 1Password for Dev Containers
 
-1Password Feature, using the host 1Password.
+Feature to install 1Password.
 
 ## Example Usage
 
