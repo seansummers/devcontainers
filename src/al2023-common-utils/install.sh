@@ -1,4 +1,5 @@
 #! /bin/bash -xe
+
 # Ensure at least the en_US.UTF-8 UTF-8 locale is available.
 # Common need for both applications and things like the agnoster ZSH theme.
 if [ "${LOCALE_ALREADY_SET}" != "true" ] && ! grep -o -E '^\s*en_US.UTF-8' /etc/environment > /dev/null; then
@@ -6,7 +7,13 @@ if [ "${LOCALE_ALREADY_SET}" != "true" ] && ! grep -o -E '^\s*en_US.UTF-8' /etc/
     LOCALE_ALREADY_SET="true"
 fi
 
-package_list="\
+dnf install -y \
+  git \
+  git-lfs \
+  shadow-utils \
+  sudo
+  
+dnf install -y \
     dialog \
     glibc-devel \
     htop \
@@ -26,7 +33,7 @@ package_list="\
     unzip \
     vim-minimal \
     wget \
-    zip \
-"
+    zip
 
-dnf install -y ${package_list}
+useradd --comment "vsCode Developer" --no-log-init --create-home --groups wheel vscode
+echo "%wheel  ALL=(ALL)  NOPASSWD: ALL" > /etc/sudoers.d/grp_wheel_nopwd
