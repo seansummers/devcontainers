@@ -1,0 +1,18 @@
+{
+  "al2023-common-utils": {
+    "build": {
+      "dockerfile": "../../images/al2023/Dockerfile"
+    },
+    "features": {
+      "al2023-common-utils": {}
+    }
+  },
+  "al2023-docker-in-docker": {
+    "build": {
+      "dockerfile": "../../images/al2023/Dockerfile"
+    },
+    "features": {
+      "al2023-docker-in-docker": {}
+    }
+  }
+}
