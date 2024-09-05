@@ -1,0 +1,9 @@
+{
+  "id": "al2023-common-utils",
+  "name": "Common Amazon Linux 2023 Utilities",
+  "version": "1.0.0",
+  "description": "Like [Common Debian Utilities (common-utils)](https://github.com/devcontainers/features/tree/main/src/common-utils) but for Amazon Linux 2023.",
+  "containerEnv": {
+    "PATH": "/usr/sbin:${PATH}"
+  }
+}
