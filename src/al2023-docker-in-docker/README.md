@@ -1,5 +1,5 @@
 
-# AmazonLinux 2023 Docker-in-Docker (amazonlinux2023-docker-in-docker)
+# Docker-in-Docker Amazon Linux 2023 (al2023-docker-in-docker)
 
 Like [Docker-in-Docker (docker-in-docker](https://github.com/devcontainers/features/tree/main/src/docker-in-docker) but for Amazon Linux 2023.
 
@@ -7,10 +7,20 @@ Like [Docker-in-Docker (docker-in-docker](https://github.com/devcontainers/featu
 
 ```json
 "features": {
-  "ghcr.io/seansummers/devcontainers/al2023-docker-in-docker:1": {}
+    "ghcr.io/seansummers/devcontainers/al2023-docker-in-docker:1": {}
 }
 ```
 
-## Options
 
-None at this time.
+
+## Customizations
+
+### VS Code Extensions
+
+- `ms-azuretools.vscode-docker`
+
+
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/seansummers/devcontainers/blob/main/src/al2023-docker-in-docker/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
