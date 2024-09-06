@@ -35,6 +35,7 @@ dnf install -y \
     unzip \
     vim-minimal \
     wget \
+    which \
     zip
 
 useradd --comment "vsCode Developer" --no-log-init --create-home --groups wheel vscode
