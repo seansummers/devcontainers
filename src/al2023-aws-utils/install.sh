@@ -4,7 +4,8 @@
 dnf install -y \
   awscli-2 \
   python3-awscrt \
-  python3-boto3
+  python3-boto3 \
+  unzip 
 
 # AWS SAM
 PLATFORM=$(uname -m | sed 's/aarch/arm/')
