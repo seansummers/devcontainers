@@ -13,7 +13,7 @@
 
 set -e
 
-echo "== installing 'docker-in-docker' features ... =="
+echo "Installing 'docker-in-docker' features..."
 
 dnf install -y findutils
 
@@ -22,7 +22,7 @@ USERNAME=${2:-"automatic"}
 
 # Setup STDERR.
 err() {
-    echo "== (!) $* ==" >&2
+    echo "(!) $*" >&2
 }
 
 if [ "$(id -u)" -ne 0 ]; then
@@ -61,19 +61,17 @@ fi
 
 # Install Docker if not already installed
 if type docker > /dev/null 2>&1 && type dockerd > /dev/null 2>&1; then
-    echo "== Docker already installed. =="
+    echo "Docker present."
 else
+    echo "Installing Docker."
     dnf install -y docker
 fi
 
-echo "== Finished installing docker! =="
-
 # If init file already exists, exit
 if [ -f "/usr/local/share/docker-init.sh" ]; then
-    echo "== /usr/local/share/docker-init.sh already exists, so exiting. =="
     exit 0
 fi
-echo "== docker-init doesnt exist, adding... =="
+echo "adding docker-init..."
 
 # Add user to the docker group
 if [ "${ENABLE_NONROOT_DOCKER}" = "true" ]; then
@@ -151,5 +149,3 @@ EOF
 
 chmod +x /usr/local/share/docker-init.sh
 chown ${USERNAME}:root /usr/local/share/docker-init.sh
-
-echo "== docker-in-docker-amzn script has completed! =="
