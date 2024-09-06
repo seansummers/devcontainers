@@ -35,6 +35,7 @@ jobs:
         features:
           - al2023-common-utils
           - al2023-docker-in-docker
+          - al2023-aws-utils
         baseImage:
           - public.ecr.aws/amazonlinux/amazonlinux:2023
     steps:
@@ -70,6 +71,7 @@ jobs:
         features:
           - al2023-common-utils
           - al2023-docker-in-docker
+          - al2023-aws-utils
         baseImage:
           - public.ecr.aws/amazonlinux/amazonlinux:2023
     steps:
