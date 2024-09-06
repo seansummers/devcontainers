@@ -31,6 +31,7 @@ dnf install -y \
     psmisc \
     rsync \
     strace \
+    tar \
     unzip \
     vim-minimal \
     wget \
