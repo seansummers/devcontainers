@@ -5,6 +5,8 @@ set -e
 # Optional: Import test library bundled with the devcontainer CLI
 source dev-container-features-test-lib
 
+/usr/local/share/docker-init.sh
+
 # Feature-specific tests
 # The 'check' command comes from the dev-container-features-test-lib.
 check "correct OS Release" bash -c "cat /etc/os-release |grep 'Amazon Linux'"
