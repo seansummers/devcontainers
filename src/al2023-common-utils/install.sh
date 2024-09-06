@@ -15,6 +15,7 @@ dnf install -y \
   
 dnf install -y \
     dialog \
+    findutils \
     glibc-devel \
     htop \
     initscripts \
