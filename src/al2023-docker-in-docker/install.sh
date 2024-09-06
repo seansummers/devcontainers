@@ -15,6 +15,8 @@ set -e
 
 echo "== installing 'docker-in-docker' features ... =="
 
+dnf install -y find xargs
+
 ENABLE_NONROOT_DOCKER=${1:-"true"}
 USERNAME=${2:-"automatic"}
 
