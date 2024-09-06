@@ -38,5 +38,5 @@ dnf install -y \
     which \
     zip
 
-useradd --comment "vsCode Developer" --no-log-init --create-home --groups wheel vscode
+useradd --comment "vscode" --no-log-init --create-home --groups wheel vscode
 echo "%wheel  ALL=(ALL)  NOPASSWD: ALL" > /etc/sudoers.d/grp_wheel_nopwd
