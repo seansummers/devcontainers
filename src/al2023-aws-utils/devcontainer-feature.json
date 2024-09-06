@@ -5,8 +5,5 @@
   "description": "AWS CLI utilities",
   "installsAfter": [
     "ghcr.io/seansummers/devcontainers/al2023-common-utils"
-  ],
-  "mounts": [
-    "source=${env:HOME}${env:USERPROFILE}/.aws,target=/home/vscode/.aws,type=bind"
   ]
 }
