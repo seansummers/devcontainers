@@ -1,7 +1,7 @@
 
-# Python with rye for Amazon Linux 2023
+# Python with rye for Amazon Linux 2023 (al2023-rye)
 
-rye for Python!
+rye for Python
 
 ## Example Usage
 
@@ -17,3 +17,8 @@ rye for Python!
 |-----|-----|-----|-----|
 | ryeVersion | rye version to install | string | latest |
 
+
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/seansummers/devcontainers/blob/main/src/al2023-rye/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
