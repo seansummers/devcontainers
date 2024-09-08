@@ -1,10 +1,13 @@
 #! /bin/bash -xe
 
+trap 'dnf -y clean all' EXIT
+
 # AWS CLI and Boto3
 dnf install -y \
   awscli-2 \
   python3-awscrt \
   python3-boto3 \
+  python3-botocore \
   unzip 
 
 # AWS SAM
