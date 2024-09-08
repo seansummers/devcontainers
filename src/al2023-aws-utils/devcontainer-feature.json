@@ -1,9 +1,6 @@
 {
   "id": "al2023-aws-utils",
   "name": "AWS CLI utilities for Amazon Linux 2023",
-  "version": "1.0.0",
-  "description": "AWS CLI utilities",
-  "installsAfter": [
-    "ghcr.io/seansummers/devcontainers/al2023-common-utils"
-  ]
+  "version": "1.0.1",
+  "description": "AWS CLI utilities"
 }
