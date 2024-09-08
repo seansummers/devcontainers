@@ -13,6 +13,8 @@
 
 set -e
 
+trap 'dnf -y clean all' EXIT
+
 echo "Installing 'docker-in-docker' features..."
 
 dnf install -y \

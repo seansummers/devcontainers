@@ -1,7 +1,7 @@
 {
   "id": "al2023-docker-in-docker",
   "name": "Docker-in-Docker Amazon Linux 2023",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Like [Docker-in-Docker (docker-in-docker](https://github.com/devcontainers/features/tree/main/src/docker-in-docker) but for Amazon Linux 2023.",
   "entrypoint": "/usr/local/share/docker-init.sh",
   "privileged": true,
