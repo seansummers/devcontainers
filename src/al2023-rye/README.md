@@ -17,6 +17,12 @@ rye for Python
 |-----|-----|-----|-----|
 | ryeVersion | rye version to install | string | latest |
 
+## Customizations
+
+### VS Code Extensions
+
+- `ms-python.python`
+
 
 
 ---
