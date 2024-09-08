@@ -1,0 +1,6 @@
+{
+  "id": "al2023-tenv",
+  "name": "tenv for Amazon Linux 2023",
+  "version": "1.0.0",
+  "description": "OpenTofu, Terraform, Terragrunt, and Atmos version manager for Amazon Linux 2023"
+}
