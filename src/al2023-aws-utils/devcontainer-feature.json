@@ -1,6 +1,6 @@
 {
   "id": "al2023-aws-utils",
   "name": "AWS CLI utilities for Amazon Linux 2023",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "AWS CLI utilities"
 }
