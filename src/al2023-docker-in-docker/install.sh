@@ -15,7 +15,11 @@ set -e
 
 echo "Installing 'docker-in-docker' features..."
 
-dnf install -y findutils
+dnf install -y \
+  findutils \
+  shadow-utils \
+  sudo \
+  util-linux-core
 
 ENABLE_NONROOT_DOCKER=${1:-"true"}
 USERNAME=${2:-"automatic"}
