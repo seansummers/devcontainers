@@ -1,7 +1,7 @@
 {
   "id": "al2023-rye",
   "name": "Python with rye for Amazon Linux 2023",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "rye for Python",
   "customizations": {
     "vscode": {
@@ -11,7 +11,8 @@
     }
   },
   "containerEnv": {
-    "PATH": "/opt/rye/shims:${PATH}"
+    "PATH": "/opt/rye/shims:${PATH}",
+    "RYE_HOME": "/opt/rye"
   },
   "options": {
     "ryeVersion": {
