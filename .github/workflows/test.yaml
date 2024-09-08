@@ -33,9 +33,11 @@ jobs:
     strategy:
       matrix:
         features:
-          - al2023-common-utils
+          - al2023-base
           - al2023-docker-in-docker
           - al2023-aws-utils
+          - al2023-rye
+          - al2023-tenv
         baseImage:
           - public.ecr.aws/amazonlinux/amazonlinux:2023
     steps:
@@ -69,9 +71,11 @@ jobs:
     strategy:
       matrix:
         features:
-          - al2023-common-utils
+          - al2023-base
           - al2023-docker-in-docker
           - al2023-aws-utils
+          - al2023-rye
+          - al2023-tenv
         baseImage:
           - public.ecr.aws/amazonlinux/amazonlinux:2023
     steps:

@@ -5,7 +5,10 @@
 
 This repository contains a collection of Dev Container Features:
 
+## Debian/Ubuntu devcontainers-features
+
 ### `1password`
+
 
 ```jsonc
 {
@@ -16,13 +19,16 @@ This repository contains a collection of Dev Container Features:
 }
 ```
 
-### `al2023-common-utils`
+
+## Amazon Linux 2023 devcontainer-features
+
+### `al2023-base`
 
 ```jsonc
 {
     "image": "public.ecr.aws/amazonlinux/amazonlinux:2023",
     "features": {
-        "ghcr.io/seansummers/devcontainers/al2023-common-utils:1": {},
+        "ghcr.io/seansummers/devcontainers/al2023-base:1": {},
     }
 }
 ```
