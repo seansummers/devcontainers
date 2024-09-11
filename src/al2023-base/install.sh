@@ -12,7 +12,8 @@ dnf -y install \
   git \
   git-lfs \
   shadow-utils \
-  sudo
+  sudo \
+  tar
 
 echo "%wheel  ALL=(ALL)  NOPASSWD: ALL" > /etc/sudoers.d/wheel_nopasswd
 useradd --comment "vscode" --no-log-init --create-home --groups wheel vscode
