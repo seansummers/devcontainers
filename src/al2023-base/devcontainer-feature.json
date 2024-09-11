@@ -1,7 +1,7 @@
 {
   "id": "al2023-base",
   "name": "Dev Containers Amazon Linux 2023 Base Setup",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Setup Amazon Linux 2023 (or any dnf enabled distribution) for Dev Containers.",
   "containerEnv": {
     "PATH": "/usr/sbin:${PATH}"
