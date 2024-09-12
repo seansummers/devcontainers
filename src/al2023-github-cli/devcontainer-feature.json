@@ -1,0 +1,6 @@
+{
+  "id": "al2023-github-cli",
+  "name": "GitHub CLI for Amazon Linux 2023",
+  "version": "1.0.0",
+  "description": "Take GitHub to the command line"
+}
