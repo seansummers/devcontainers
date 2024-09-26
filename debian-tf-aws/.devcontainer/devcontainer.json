@@ -1,0 +1,31 @@
+{
+	"name": "Debian",
+	"image": "mcr.microsoft.com/devcontainers/base:bullseye",
+	"features": {
+		"ghcr.io/devcontainers/features/aws-cli:1": {},
+		"ghcr.io/devcontainers/features/docker-in-docker:2": {},
+		"ghcr.io/devcontainers/features/github-cli:1": {}
+	},
+	"customizations": {
+		"vscode": {
+			"settings": {
+				"files.eol": "\n"
+			},
+			"extensions": [
+				"AmazonWebServices.aws-toolkit-service",
+				"hashicorp.terraform",
+				"mads-hartmann.bash-ide-vscode",
+				"ms-azuretools.vscode-docker"
+			]
+		}
+	},
+	"mounts": [
+		"source=${env:HOME}${env:USERPROFILE}/.aws,target=/home/vscode/.aws,type=bind",
+		"source=${env:HOME}${env:USERPROFILE}/.ssh,target=/home/vscode/.ssh,type=bind"
+	],
+	"postCreateCommand": "./.devcontainer/postCreateCommand.sh",
+	"containerUser": "vscode",
+	"remoteEnv": {
+		"PATH": "${containerEnv:HOME}/.cargo/bin:${containerEnv:PATH}"
+	}
+}
